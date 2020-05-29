@@ -47,7 +47,7 @@ Localstorage和sessionstorage：即可采用原生接口，亦可再次封装
 
 ### 6. HTML语义化？
 - 语义化：正确的标签包含了正确的内容，结构良好，便于阅读。
-- 语义化标签：<header> <nav> <article> <session> <aside> <footer>
+- 语义化标签：`<header> <nav> <article> <session> <aside> <footer>`
 - 语义化的意义：
 1. 易于用户阅读，样式丢失的时候能让页面呈现清晰的结构。
 2. 有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。
@@ -55,7 +55,7 @@ Localstorage和sessionstorage：即可采用原生接口，亦可再次封装
 4. 有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。
 
 ### 7. link和@import的区别?
-- 都是外部导入css文件，导入格式如下：
+- 都是外部导入css文件，导入格式如下：<br/>
 ` <link rel='stylesheet' rev='stylesheet' href='xx.css ' type='text/css'/> `
 ` @import url('xx.css'); `
 - 区别：
@@ -98,9 +98,9 @@ Localstorage和sessionstorage：即可采用原生接口，亦可再次封装
 与传统浏览器缓存相比，它不强制用户访问的网站内容被缓存。
 
 ### 12. HTML5媒体标签？
-1. 音频 <audio>
-2. 视频 <video>
+1. 音频 `<audio>`
+2. 视频 `<video>`
 3. 其他标签：
-- <embed> 标签定义嵌入的内容，比如插件。
-- <source> 对于定义多个数据源很有用。
-- <track> 标签为诸如 video 元素之类的媒介规定外部文本轨道。 用于规定字幕文件或其他包含文本的文件，当媒介播放时，这些文件是可见的。
+- `<embed>` 标签定义嵌入的内容，比如插件。
+- `<source>` 对于定义多个数据源很有用。
+- `<track>` 标签为诸如 video 元素之类的媒介规定外部文本轨道。 用于规定字幕文件或其他包含文本的文件，当媒介播放时，这些文件是可见的。
