@@ -10,8 +10,8 @@
 - DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。
 
 ### 3. H5移除了哪些元素？
-1. 纯表现元素：<basefont>  <font>  <u>  <tt>  <strike>  <center>  <big>
-2. 框架集：<frame>  <frameset>  <noframe>
+1. 纯表现元素：`<basefont>  <font>  <u>  <tt>  <strike>  <center>  <big>`
+2. 框架集：`<frame>  <frameset>  <noframe>`
 
 ### 4. 浏览器内核？
 - IE: trident 内核
