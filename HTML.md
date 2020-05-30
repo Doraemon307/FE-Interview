@@ -1,6 +1,6 @@
 ### 1. 浏览器页面有哪三层构成，分别是什么，作用是什么?
-构成：结构层、表示层、行为层 <br>
-分别是：HTML、CSS、JavaScript <br>
+构成：结构层、表示层、行为层<br>
+分别是：HTML、CSS、JavaScript<br>
 作用：HTML实现页面结构，CSS完成页面的表现与风格，JavaScript实现一些客户端的功能与业务。
 
 ### 2. Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?
@@ -27,20 +27,20 @@
 4. 单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。
 
 - cookie，localstorage，sessionstorage的区别：
-1. 生命周期：
-Cookie：可设置失效时间，否则默认为关闭浏览器后失效
-Localstorage：除非被手动清除，否则永久保存
-Sessionstorage：仅在当前网页会话下有效，关闭页面或浏览器后就会被清除
-2. 存放数据：
-Cookie：4k左右
-Localstorage和sessionstorage：可以保存5M的信息
-3. http请求：
+1. 生命周期：<br>
+Cookie：可设置失效时间，否则默认为关闭浏览器后失效<br>
+Localstorage：除非被手动清除，否则永久保存<br>
+Sessionstorage：仅在当前网页会话下有效，关闭页面或浏览器后就会被清除<br>
+2. 存放数据：<br>
+Cookie：4k左右<br>
+Localstorage和sessionstorage：可以保存5M的信息<br>
+3. http请求：<br><br>
 Cookie：每次都会携带在http头中，如果使用cookie保存过多数据会带来性能问题
-Localstorage和sessionstorage：仅在客户端即浏览器中保存，不参与和服务器的通信
-4. 易用性：
-Cookie：需要程序员自己封装，原生的cookie接口不友好
-Localstorage和sessionstorage：即可采用原生接口，亦可再次封装
-5. 应用场景：
+Localstorage和sessionstorage：仅在客户端即浏览器中保存，不参与和服务器的通信<br>
+4. 易用性：<br>
+Cookie：需要程序员自己封装，原生的cookie接口不友好<br>
+Localstorage和sessionstorage：即可采用原生接口，亦可再次封装<br>
+5. 应用场景：<br>
 从安全性来说，因为每次http请求都回携带cookie信息，这样子浪费了带宽，所以cookie应该尽可能的少用，此外cookie还需要指定作用域，不可以跨域调用，限制很多，但是用户识别用户登陆来说，cookie还是比storage好用，其他情况下可以用storage，localstorage可以用来在页面传递参数，sessionstorage可以用来保存一些临时的数据，防止用户刷新页面后丢失了一些参数。
 
 - localStorage、sessionStorage的区别：
@@ -57,8 +57,8 @@ Localstorage和sessionstorage：即可采用原生接口，亦可再次封装
 4. 有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。
 
 ### 7. link和@import的区别?
-- 都是外部导入css文件，导入格式如下：<br/>
-` <link rel='stylesheet' rev='stylesheet' href='xx.css ' type='text/css'/> `
+- 都是外部导入css文件，导入格式如下：<br>
+` <link rel='stylesheet' rev='stylesheet' href='xx.css ' type='text/css'/> `  <br>
 ` @import url('xx.css'); `
 - 区别：
 1. link 是 XHTML 标签，除了加载 CSS 外，还可以定义 RSS 等其他事务；@import 属于 CSS 范畴，只能加载 CSS 。
@@ -67,9 +67,8 @@ Localstorage和sessionstorage：即可采用原生接口，亦可再次封装
 4. link 支持使用 Javascript 控制 DOM 去改变样式；而 @import 不支持。
 
 ### 8. 'data-'属性的作用是什么？
-`data-`为H5新增的为前端开发者提供自定义的属性，这些属性集可以通过对象的 `dataset` 属性获取，不支持该属性的浏览器可以通过 `getAttribute` 方法获取 :
-
-需要注意的是：`data-`之后的以连字符分割的多个单词组成的属性，获取的时候使用驼峰风格。 所有主流浏览器都支持 data-* 属性。即：当没有合适的属性和元素时，自定义的 data 属性是能够存储页面或 App 的私有的自定义数据。
+`data-`为H5新增的为前端开发者提供自定义的属性，这些属性集可以通过对象的 `dataset` 属性获取，不支持该属性的浏览器可以通过 `getAttribute` 方法获取。
+> 需要注意的是：`data-`之后的以连字符分割的多个单词组成的属性，获取的时候使用驼峰风格。 所有主流浏览器都支持 data-* 属性。即：当没有合适的属性和元素时，自定义的 data 属性是能够存储页面或 App 的私有的自定义数据。
 
 ### 9. 浏览器内核的理解？
 主要分成两部分：渲染引擎(layout engineer或 Rendering Engine) 和 JS 引擎。
