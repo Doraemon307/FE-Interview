@@ -1,6 +1,6 @@
 ### 1. 浏览器页面有哪三层构成，分别是什么，作用是什么?
-构成：结构层、表示层、行为层 
-分别是：HTML、CSS、JavaScript 
+构成：结构层、表示层、行为层 <br>
+分别是：HTML、CSS、JavaScript <br>
 作用：HTML实现页面结构，CSS完成页面的表现与风格，JavaScript实现一些客户端的功能与业务。
 
 ### 2. Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?
@@ -21,8 +21,10 @@
 
 ### 5. cookie、session、localStorage、sessionStorage的区别？
 - cookie & session的区别：
-1. cookie和session都可用来存储用户信息，cookie存放于客户端，session存放于服务器端
-2. cookie存放于客户端有可能被窃取，所以cookie一般用来存放不敏感的信息，比如用户设置的网站主题，敏感的信息用session存储，比如用户的登陆信息。
+1. cookie数据存放在客户的浏览器上，session数据放在服务器上。
+2. cookie不是很安全，别人可以分析存放在本地的COOKIE并进行COOKIE欺骗。考虑到安全应当使用session。
+3. session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能。考虑到减轻服务器性能方面，应当使用COOKIE。
+4. 单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。
 
 - cookie，localstorage，sessionstorage的区别：
 1. 生命周期：
